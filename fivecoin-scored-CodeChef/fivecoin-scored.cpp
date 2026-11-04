@@ -2,18 +2,21 @@
 using namespace std;
 
 int main() {
-    // Fast I/O
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
+    int n;
+    cin >> n; // Read the single value of N
     
-    long long n; // Upgraded to hold massive numbers
-    while (cin >> n) {
-        long long total_coins = (n / 5) + (n % 5);
-        cout << total_coins << "\n";
+    if (n < 5) {
+        // Can't use the 5-rupee coin
+        cout << n << "\n"; 
+    } else {
+        // Use exactly one 5-rupee coin, rest in 1-rupee coins
+        cout << 1 + (n - 5) << "\n"; 
     }
     
     return 0;
 }
+
+
 
 
 // Synced seamlessly with LeetHub Pro
