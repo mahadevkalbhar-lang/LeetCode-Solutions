@@ -2,13 +2,10 @@
 using namespace std;
 
 int main() {
-int t;
-    cin >> t; 
-    while (t--) {
-        int n;
-        cin >> n;
-        cout << (n / 5) + (n % 5) << "\n";
-    }
+int n;
+    cin >> n; 
+    int total_coins = (n / 5) + (n % 5);
+    cout << total_coins << "\n";
     return 0;
 
 }
