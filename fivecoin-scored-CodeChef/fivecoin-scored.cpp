@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     int n;
-    cin >> n; 
+    while cin >> n; 
     int total_coins = (n / 5) + (n % 5);
     cout << total_coins << "\n";
     return 0;
