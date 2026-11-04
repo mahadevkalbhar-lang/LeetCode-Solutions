@@ -2,17 +2,25 @@
 using namespace std;
 
 int main() {
+    // Fast I/O
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     
     int n;
     while (cin >> n) {
-        int total_coins = (n / 5) + (n % 5);
-        cout << total_coins << "\n";
+        int coins = (n / 5) + (n % 5);
+        
+        // If it requires more than 5 coins total, it's impossible
+        if (coins > 5) {
+            cout << -1 << "\n";
+        } else {
+            cout << coins << "\n";
+        }
     }
     
     return 0;
 }
+
 
 // Synced seamlessly with LeetHub Pro
 // Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
