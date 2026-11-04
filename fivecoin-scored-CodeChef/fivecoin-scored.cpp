@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-int n;
+    int n;
     cin >> n; 
     int total_coins = (n / 5) + (n % 5);
     cout << total_coins << "\n";
