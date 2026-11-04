@@ -6,16 +6,10 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     
-    int n;
+    long long n; // Upgraded to hold massive numbers
     while (cin >> n) {
-        int coins = (n / 5) + (n % 5);
-        
-        // If it requires more than 5 coins total, it's impossible
-        if (coins > 5) {
-            cout << -1 << "\n";
-        } else {
-            cout << coins << "\n";
-        }
+        long long total_coins = (n / 5) + (n % 5);
+        cout << total_coins << "\n";
     }
     
     return 0;
